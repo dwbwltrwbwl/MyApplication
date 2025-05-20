@@ -11,6 +11,7 @@ class DoctorsAdapter(private val doctorsList: List<Doctors>) :
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DoctorsViewHolder {
                 val binding = ItemDoctorsBinding.inflate(LayoutInflater.from(parent.context),parent, false)
                 return DoctorsViewHolder(binding)
+
         }
 
         override fun onBindViewHolder(holder: DoctorsViewHolder, position: Int) {
